@@ -1,4 +1,4 @@
-~~ kitty_ipsum_1.txt info ~~
+#~~ kitty_ipsum_1.txt info ~~
 
 #Number of lines:27
 wc -l < kitty_ipsum_1.txt >> kitty_info.txt 
@@ -16,7 +16,7 @@ grep 'cat[a-z]*' -o kitty_ipsum_1.txt | wc -l >> kitty_info.txt
 grep 'cat[a-z]*' -n kitty_ipsum_1.txt | sed -E 's/([0-9]+).*/\1/' >> kitty_info.txt
 
 
-~~ kitty_ipsum_2.txt info ~~
+#~~ kitty_ipsum_2.txt info ~~
 
 #Number of lines: 28
 wc -l < kitty_ipsum_2.txt >> kitty_info.txt 
@@ -36,7 +36,7 @@ grep 'cat[a-z]*' -o kitty_ipsum_2.txt | wc -l >> kitty_info.txt
 #Lines that they appear on:10 14 19 20 25 26 28
 grep 'cat[a-z]*' -n kitty_ipsum_2.txt | sed -E 's/([0-9]+).*/\1/' >> kitty_info.txt
 
-~~ doggy_ipsum_2.txt info ~~ #with translate.sh file
+#~~ doggy_ipsum_2.txt info ~~ #with translate.sh file
 
 cat kitty_ipsum_1.txt | ./translate.sh
 cat kitty_ipsum_2.txt | ./translate.sh
